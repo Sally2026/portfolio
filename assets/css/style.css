@@ -1,0 +1,213 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+img {
+  max-width: 100%;
+}
+
+/*---------------- Nav ----------------*/
+
+body {
+  background: #FCF8E7;
+  margin: 0;
+}
+
+.primary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  gap: 20px;
+}
+
+.nav-links ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3rem;
+  gap: 120px;
+  list-style-type: none;
+}
+
+.primary nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.primary nav ul li a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+.contact {
+  text-decoration: none;
+  color: #000;
+  border: 2px solid #c43461;
+  border-radius: 16px;
+  padding: 5px 10px;
+}
+
+.contact:hover {
+  background-color: #c43461;
+  color: #000;
+  transition: 0.3s ease-in-out;
+}
+
+/*---------------- Content ----------------*/
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.blog-post {
+  color: #000;
+  font-family: "Caprasimo", serif;
+  font-size: 1.5rem;
+  line-height: 0.2;
+}
+
+.intro {
+  padding-top: 60px;
+}
+
+.first-name {
+  font-size: 3.8rem;
+  color: #5A97AC;
+}
+
+.last-name {
+  font-size: 3.8rem;
+  color: #000;
+}
+
+.profile img {
+  width: 380px;
+  margin-top: 20px;
+  margin-left: 150px;
+
+}
+
+.description {
+  color: #000;
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+/*---------------- typewriter----------------*/
+.cursor {
+  display: inline-block;
+  color: #C43461;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+#text {
+  color: #C43461;
+  font-family: "Charm", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+/*---------------- Icons ----------------*/
+
+.icons{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.related-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin-right: 15px;
+}
+
+.related-links a {
+  color: #000;
+  font-size: 2.5rem;
+}
+
+.related-links a:hover {
+  color: #5A97AC;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #000;
+  margin:0 20px;
+}
+
+/*---------------- Skills ----------------*/
+.skills h2 {
+  color: #000;
+  font-family: "Caprasimo", serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.skills-container {
+  text-align: right;
+  padding-left: 160px;
+  color: black;
+  margin-left: 160px;
+}
+
+.skills p{
+  color: #000;
+  font-family: "Crimson Text", serif;
+  font-size: 1.2rem;
+  text-align: left;
+}
+.skill-bar {
+  background-color: #ddd;
+  border-radius: 8px;
+  width: 60%;
+  overflow: hidden;
+  margin: 10px 20px;
+}
+
+#skill-html {width: 90%; background-color: #5A97AC;}
+#skill-css {width: 80%; background-color: #5A97AC;}
+#skill-js {width: 65%; background-color: #5A97AC;}
+
+/*---------------- Portfolio ----------------*/
+
+.portfolio h2 {
+  color: #000;
+  font-family: "Caprasimo", serif;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.portfolio hr {
+  border: none;
+  height: 1px;
+  background-color: #000;
+  margin: 20px 400px;
+}
