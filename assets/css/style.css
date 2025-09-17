@@ -51,13 +51,13 @@ body {
 .contact {
   text-decoration: none;
   color: #000;
-  border: 2px solid #c43461;
+  border: 2px solid #5A97AC;
   border-radius: 16px;
   padding: 5px 10px;
 }
 
 .contact:hover {
-  background-color: #c43461;
+  background-color: #5A97AC;
   color: #000;
   transition: 0.3s ease-in-out;
 }
@@ -114,7 +114,7 @@ body {
 /*---------------- typewriter----------------*/
 .cursor {
   display: inline-block;
-  color: #C43461;
+  color: #5A97AC;
   animation: blink 0.7s infinite;
 }
 
@@ -124,7 +124,7 @@ body {
 }
 
 #text {
-  color: #C43461;
+  color: #5A97AC;
   font-family: "Charm", cursive;
   font-weight: 700;
   font-style: normal;
