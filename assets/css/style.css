@@ -212,3 +212,15 @@ hr {
   background-color: #000;
   margin: 20px 400px;
 }
+
+/*---------------- Resume----------------*/
+
+.resume-container{
+  display: grid;
+  grid-template-columns:repeat(2,1fr);
+  margin-left:40px;
+  margin-right: 40px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  background: #F7AEC2;
+}
