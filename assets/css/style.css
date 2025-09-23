@@ -98,6 +98,7 @@ body {
 .profile img {
   width: 380px;
   margin-top: 20px;
+  margin-bottom: 40px;
   margin-left: 150px;
   border: 8px solid #000;
   border-radius: 250px;
@@ -172,18 +173,18 @@ hr {
 }
 
 .skills-container {
-  text-align: right;
-  padding-left: 160px;
-  color: black;
-  margin-left: 160px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-left: 220px;
 }
 
 .skills p{
   color: #000;
   font-family: "Crimson Text", serif;
   font-size: 1.2rem;
-  text-align: left;
 }
+
+/*
 .skill-bar {
   background-color: #ddd;
   border-radius: 8px;
@@ -194,7 +195,7 @@ hr {
 
 #skill-html {width: 90%; background-color: #5A97AC;}
 #skill-css {width: 80%; background-color: #5A97AC;}
-#skill-js {width: 65%; background-color: #5A97AC;}
+#skill-js {width: 65%; background-color: #5A97AC;} */
 
 /*---------------- Portfolio ----------------*/
 
@@ -227,6 +228,7 @@ hr {
 }
 
 .right-side img{
-  margin-left: 170px;
-  margin-bottom: -170px;
+  margin-left: 130px;
+  margin-bottom: -450px;
+  
 }

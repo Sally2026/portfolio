@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
   typeEffect(); // Start the typing effect
 });
 
+/*
 document.addEventListener("DOMContentLoaded", () => {
   const skillsSection = document.querySelector(".skills");
   const skillBars = [
@@ -71,4 +72,4 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   window.addEventListener("scroll", animateSkillBars);
-});
+});*/
