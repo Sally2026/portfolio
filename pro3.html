@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Polygon - Currency History">
+  <meta name="keywords" content="HTML, CSS, JavaScript, AJAX, jQuery">
+  <meta name="author" content="Sally Alazab">
+  <title> Polygon - Curreny History</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  
+</head>
+<body>
+  <main>
+    <form id="myform" onsubmit="return false">
+      <div class="formcontainer">
+        <h2> Currency Value History </h2>
+        <label for="BaseCurrency" class="formlabel"> Base Currency: </label>
+        <select id="BaseCurrency" name="BaseCurrency" data-rule-required="true" data-msg-required="Base Currency is Required">
+          <option value="" disabled selected>Select a Currency...</option>
+          <option value="USD">US Dollars</option>
+          <option value="AED">UAE Dirham</option>
+          <option value="KWD">Kuwaiti Dinar</option>
+          <option value="SAR">Saudi Riyal</option>
+          <option value="LBP">Lebanese Pound</option>
+          <option value="TRY">Turkish Lira</option>
+          <option value="YER">Yemeni Rial</option>
+        </select>
+        <br>
+        <label for="ConvertCurrency" class="formlabel">Convert to Currency: </label>
+        <select id="ConvertCurrency" name="ConvertCurrency" data-rule-required="true" data-msg-required="Convert To  Currency is Required">
+        <option value="" disabled selected>Select a Currency...</option>
+          <option value="USD">US Dollars</option>
+          <option value="AED">UAE Dirham</option>
+          <option value="KWD">Kuwaiti Dinar</option>
+          <option value="SAR">Saudi Riyal</option>
+          <option value="LBP">Lebanese Pound</option>
+          <option value="TRY">Turkish Lira</option>
+          <option value="YER">Yemeni Rial</option>
+        </select>
+        <br>
+
+        <label for="FromDate" class="formlabel">From Date:</label>
+        <input type="date" id="FromDate" name="FromDate" required> 
+        <br>
+
+        <label for="ToDate" class="formlabel">To Date:</label>
+        <input type="date" id="ToDate" name="toDate" required>
+        <br><br>
+
+        <input type="button" value="Show Results" id="DisplayCurrency">
+        <input type="button" value="Clear" id="Clear" name="Clear" onclick="ClearForm();">
+        <hr>
+      </div>
+    </form>
+    <div id="chart-container">
+      <canvas id="chartjs-0"></canvas>
+    </div>
+  </main>
+</body>
+</html>

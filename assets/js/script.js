@@ -31,6 +31,31 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   typeEffect(); // Start the typing effect
+
+   // Get nav links and portfolio items
+  const navLinks = document.querySelectorAll('.portfolio-nav a');
+  const items = document.querySelectorAll('.portfolio-item');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    // active class
+    navLinks.forEach(nav => nav.classList.remove('active'));
+    link.classList.add('active');
+
+    const category = link.dataset.category; // ← use data-category
+
+    items.forEach(item => {
+      if (category === 'all' || item.classList.contains(category)) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  });
+});
+
 });
 
 /*
@@ -73,3 +98,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener("scroll", animateSkillBars);
 });*/
+
+ 

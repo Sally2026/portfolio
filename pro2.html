@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="JavaScript Unit Converter (AJAX)"> 
+  <meta name="keywords" content="JavaScript, HTML, CSS">
+  <meta name="author" content="Sally Alazab">
+  <title>JavaScript Calculator</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/pro2.css">
+  <script src="assets/js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
+</head>
+
+<body>
+  <form id="myform">
+    <div class="formcontainer" onsubmit="return false">
+      <h1>Unit Converter (AJAX)</h1>
+      <fieldset id="detail">
+        <legend>Unit Converter (AJAX)</legend>
+        <br>
+
+        <label class="formlabel" for="FormValue">From Value: </label>
+        <input type="text" id="FormValue" name="FormValue" size="17" maxlength="17" data-rule-required="true" data-msg-required="Value is Required" data-rule-number="true" data-msg-number="Value must be a Number">
+        <label class="error" for="FormValue" id="FormValueError"></label>
+        <br><br>
+
+        <label class="formlabel">Form Unit: </label>
+        <label for="cm">
+          <input type="radio" name="FormUnit" id="cm" value="cm" data-rule-required="true" data-msg-required="Form Unit is Required"> centimeters
+        </label>
+        <label for="m">
+          <input type="radio" name="FormUnit" id="m" value="m"> meters
+        </label>
+        <label for="km">
+          <input type="radio" name="FormUnit" id="km" value="km"> kilometers
+        </label>
+        <label for="in">
+          <input type="radio" name="FormUnit" id="in" value="in"> inches
+        </label>
+        <label for="ft">
+          <input type="radio" name="FormUnit" id="ft" value="ft"> feet
+        </label>
+        <label for="yd">
+          <input type="radio" name="FormUnit" id="yd" value="yd"> yards
+        </label>
+        <label for="mi">
+          <input type="radio" name="FormUnit" id="mi" value="mi"> miles
+        </label>
+        <label for="FormUnit" class="error" id="FormUnitError"></label>
+        <br><br>
+
+        <label class="formlabel">To Unit: </label>
+        <label for="tocm">
+          <input type="radio" name="ToUnit" id="tocm" value="cm" data-rule-required="true" data-msg-required="To Unit is Required"> centimeters
+        </label>
+        <label for="tom">
+          <input type="radio" name="ToUnit" id="tom" value="m"> meters
+        </label>
+        <label for="tokm">
+          <input type="radio" name="ToUnit" id="tokm" value="km"> kilometers
+        </label>
+        <label for="toin">
+          <input type="radio" name="ToUnit" id="toin" value="in"> inches
+        </label>
+        <label for="toft">
+          <input type="radio" name="ToUnit" id="toft" value="ft"> feet
+        </label>
+        <label for="toyd">
+          <input type="radio" name="ToUnit" id="toyd" value="yd"> yards
+        </label>
+        <label for="tomi">
+          <input type="radio" name="ToUnit" id="tomi" value="mi"> miles
+        </label>
+        <label for="ToUnit" class="error" id="ToUnitError"></label>
+        <br><br>
+        
+        <label class="formlabel">To Value: </label>
+        <span id="ToValue"></span>
+        <br><br>
+
+        <input type="button" value="Calculate" name="Calculate" onclick="calculate();">
+        <input type="button" value="Clear" name="Clear" onclick="clearform();">
+
+      </fieldset>
+    </div>
+  </form>
+</body>
+</html>
