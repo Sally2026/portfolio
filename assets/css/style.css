@@ -294,17 +294,15 @@ background-size: cover;
 .resume-container{
   display: grid;
   grid-template-columns:repeat(2,1fr);
-  margin-left:160px;
-  margin-right: 160px;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  width: 80vw;
+  margin: 80px auto;
   padding: 20px;
   background: #F7AEC2;
 }
 
 .right-side img{
-  margin-left: 130px;
-  margin-bottom: -450px;
+  margin-left: 160px;
+  margin-bottom: -460px;
   
 }
 
@@ -312,10 +310,13 @@ background-size: cover;
 .coverletter-container{
   display: grid;
   grid-template-columns:repeat(1,1fr);
-  margin-left:160px;
-  margin-right: 160px;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  width: 80vw;
+  margin: 80px auto;
   padding: 20px;
   background: #F7AEC2;
+}
+
+.coverletter-container img{
+  margin-left: 660px;
+  margin-bottom: -60px;
 }
