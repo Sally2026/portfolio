@@ -97,11 +97,11 @@ body {
 
 .profile img {
   width: 380px;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 40px;
   margin-left: 150px;
   border: 8px solid #000;
-  border-radius: 120px;
+  border-radius: 49%;
 }
 
 .description {
