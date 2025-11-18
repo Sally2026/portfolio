@@ -97,11 +97,10 @@ body {
 
 .sidebar{
   background: #5A97AC;
-  margin-top: 30px;
-  margin-bottom: 90px;
-  margin-left: 90px;
-  margin-right: 50px;
-
+  margin-top: 20px;
+  margin-bottom:40px;
+  margin-left: 160px;
+  margin-right: 20px;
 }
 
 .profile img {
@@ -360,6 +359,22 @@ padding: 20px;
 }
 
 .graphic-right img{
+  margin-left: 260px;
+  margin-bottom: -600px;
+}
+
+/*---------------- Data pages ----------------*/
+
+.data-container{
+  display: grid;
+  grid-template-columns:repeat(2,1fr);
+  width: 80vw;
+  margin: 80px auto;
+  padding: 20px;
+  background: #d79da6;
+}
+
+.data-right img{
   margin-left: 260px;
   margin-bottom: -600px;
 }
