@@ -3,60 +3,55 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="JavaScript Calculator">
-  <meta name="keywords" content="JavaScript, HTML, CSS">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sally Alazab's Portfolio">
   <meta name="author" content="Sally Alazab">
-  <title>JavaScript Calculator</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/pro1.css">
+  <link href="assets/css/style.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/prism.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Charm:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Serif+Text:ital@0;1&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italianno&family=Lobster&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Dirt&display=swap" rel="stylesheet">
   <script src="assets/js/script.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
+  <title>Sally Alazab Portfolio</title>
 </head>
 
 <body>
-  <form id="myform">
-    <div class="formcontainer" onsubmit="return false">
-      <h1>JavaScript Calculator</h1>
-      <fieldset id="detail">
-        <legend>Calculator</legend>
-        <br>
-
-        <label class="formlabel" for="Operand1">Operand 1: </label>
-        <input type="text" id="Operand1" name="Operand1" size="15" maxlength="15" data-rule-required="true" data-msg-required="Operand 1 is Required" data-rule-number="true" data-msg-number="Operand 1 must be a Number">
-        <label class="error" for="Operand1" id="Operand1Error"></label>
-        <br><br>
-
-        <label class="formlabel">Operator: </label>
-        <label for="AddOperator">
-          <input type="radio" name="Operator" id="AddOperator" value="Add" data-rule-required="true" data-msg-required="Operator is Required" />+
-        </label>
-        <label for="SubOperator">
-          <input type="radio" name="Operator" id="SubOperator" value="Sub">-
-        </label>
-        <label for="MultOperator">
-          <input type="radio" name="Operator" id="MultOperator" value="Mult">*
-        </label>
-        <label for="DivOperator">
-          <input type="radio" name="Operator" id="DivOperator" value="Div">/
-        </label>
-        <label for="Operator" class="error" id="OperatorError"></label>
-        <br><br>
-
-        <label class="formlabel" for="Operand2">Operand 2: </label>
-        <input type="text" id="Operand2" name="Operand2" size="15" maxlength="15" data-rule-required="true" data-msg-required="Operand is Required" data-rule-number="true" data-msg-number="Operand 2 must be a Number">
-        <label class="error" for="Operand2" id="Operand2Error"></label>
-        <br><br>
-
-        <label class="formlabel">Result: </label>
-        <span id="Result"></span>
-        <br><br>
-
-        <input type="button" value="Calculate" name="Calculate" onclick="calculate();">
-        <input type="button" value="Clear" name="Clear" onclick="clearform();" >
-
-      </fieldset>
-    </div>
-  </form>
+  <main>
+    <header class="primary">
+      <figure>
+        <img src="assets/img/logo.png" alt="logo">
+      </figure>
+      <nav class="nav-links">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="resume.html">RESUME</a></li>
+          <li><a href="coverletter.html">COVER LETTER</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#">PORTFOLIO</a></li>
+          <li><a href="assets/my-resume4.pdf" class="resume" target="_blank">RESUME</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr>
+    <section class="programing-container">
+      <div class="programing-left">
+        <img src="assets/img/p1.png" alt="Programing Project 1" width="450px">
+      </div>
+      <div class="programing-right">
+        <h1>Project Description </h1>
+        <a href="pro-1.html"> Link to the project </a> <br>
+        <img src="assets/img/1.svg" alt="Flower outline" width="250px"></img>
+      </div>
+    </section>
+    
+    
+    
+    
+  </main>
 </body>
+
 </html>

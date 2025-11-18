@@ -95,13 +95,21 @@ body {
   color: #000;
 }
 
+.sidebar{
+  background: #5A97AC;
+  margin-top: 30px;
+  margin-bottom: 90px;
+  margin-left: 90px;
+  margin-right: 50px;
+
+}
+
 .profile img {
   width: 380px;
   margin-top: 50px;
   margin-bottom: 40px;
-  margin-left: 150px;
-  border: 8px solid #000;
-  border-radius: 49%;
+  margin-left: -30px;
+  border: 20px solid #000;
 }
 
 .description {
@@ -113,6 +121,7 @@ body {
   margin-top: 20px;
   line-height: 1.5;
 }
+
 /*---------------- typewriter----------------*/
 .cursor {
   display: inline-block;
@@ -254,7 +263,7 @@ padding: 20px;
 /* Portfolio Gallery Grid */
 .portfolio-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3,1fr);
   gap: 20px;
   margin-top: 30px;
   margin-left: 20px;
@@ -268,12 +277,10 @@ padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
-  background: #5A97AC;
 }
 
 .portfolio-item a{
   text-decoration: none;
-
 }
 
 .portfolio-item:hover {
@@ -284,13 +291,12 @@ padding: 20px;
   width: 100%;
   height: auto;
   display: block;
-  border-bottom: 2px solid #eee;
 }
 
 .portfolio-item h3 {
   margin: 10px;
   font-size: 1.1rem;
-  color: #333;
+  color: #000000;
 }
 
 /*---------------- Resume----------------*/
@@ -323,4 +329,37 @@ padding: 20px;
 .coverletter-container img{
   margin-left: 660px;
   margin-bottom: -60px;
+}
+
+/*---------------- Programing pages ----------------*/
+
+.programing-container{
+  display: grid;
+  grid-template-columns:repeat(2,1fr);
+  width: 80vw;
+  margin: 80px auto;
+  padding: 20px;
+  background: #d79da6;
+}
+
+.programing-right img{
+  margin-left: 260px;
+  margin-bottom: -500px;
+}
+
+
+/*---------------- Graphic Design pages ----------------*/
+
+.graphic-container{
+  display: grid;
+  grid-template-columns:repeat(2,1fr);
+  width: 80vw;
+  margin: 80px auto;
+  padding: 20px;
+  background: #d79da6;
+}
+
+.graphic-right img{
+  margin-left: 260px;
+  margin-bottom: -600px;
 }
