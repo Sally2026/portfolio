@@ -322,6 +322,22 @@ padding: 20px;
   grid-row: 2 / 4;
 }
 
+/*---------------- Resume ----------------*/
+.resume-container{
+  display: grid;
+  grid-template-columns:repeat(2,1fr);
+  width: 80vw;
+  margin: 80px auto;
+  padding: 20px;
+  background: #d79da6;
+}
+
+
+.resume-container img{
+  margin-left: 120px;
+  margin-bottom: 10px;
+}
+
 /*---------------- Cover Letter----------------*/
 .coverletter-container{
   display: grid;
