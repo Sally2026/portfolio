@@ -332,10 +332,9 @@ padding: 20px;
   background: #d79da6;
 }
 
-
-.resume-container img{
-  margin-left: 120px;
-  margin-bottom: 10px;
+.right-side img{
+  margin-left: 170px;
+  margin-bottom: -470px;
 }
 
 /*---------------- Cover Letter----------------*/
