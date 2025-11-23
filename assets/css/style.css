@@ -21,8 +21,8 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
   gap: 20px;
 }
 
@@ -226,13 +226,13 @@ padding: 20px;
 #skill-js {width: 65%; background-color: #5A97AC;} */
 
 /*---------------- Portfolio ----------------*/
-.portfolio{
+#portfolio{
   background:#5A97AC;
   padding: 0;
   margin: 0;
 }
 
-.portfolio h2 {
+#portfolio h2 {
   color: #000;
   font-family: "Caprasimo", serif;
   font-size: 1.5rem;
@@ -240,14 +240,14 @@ padding: 20px;
   padding: 20px;
 }
 
-.portfolio hr {
+#portfolio hr {
   border: none;
   height: 1px;
   margin: 20px 400px;
 }
 
-.portfolio h2,
-.portfolio hr {
+#portfolio h2,
+#portfolio hr {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -384,7 +384,7 @@ padding: 20px;
 
 .graphic-right img{
   margin-left: 260px;
-  margin-bottom: -600px;
+  margin-bottom: -440px;
 }
 
 /*---------------- Data pages ----------------*/
