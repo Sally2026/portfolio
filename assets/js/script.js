@@ -60,7 +60,6 @@ navLinks.forEach(link => {
 
 
 
-
 /*
 document.addEventListener("DOMContentLoaded", () => {
   const skillsSection = document.querySelector(".skills");
