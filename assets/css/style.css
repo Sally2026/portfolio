@@ -282,7 +282,6 @@ padding: 20px;
   padding: 20px;
 }
 
-/* Makes items behave correctly inside columns */
 .portfolio-item {
   break-inside: avoid;
   margin-bottom: 30px;
@@ -556,3 +555,95 @@ canvas{
   text-decoration: underline;
   color: #5A97AC;
 }
+
+/*---------------- Media Queries ----------------*/
+
+@media (max-width: 650px) {
+}
+
+
+@media (max-width: 976px) {
+
+.nav-links ul {
+  gap: 10px;
+}
+
+.sidebar{
+  background: #5A97AC;
+  margin-top: 20px;
+  margin-bottom:20px;
+  margin-left: 10px;
+  margin-right: 40px;
+}
+
+.skills-container {
+  margin: 0 auto;
+
+}
+
+.right-side img{
+  margin-left: 60px;
+  margin-bottom: -460px;
+}
+
+.coverletter-container img{
+  margin-left: 420px;
+  margin-bottom: -70px;
+}
+
+.web-container{
+  gap: 20px;
+}
+
+.web-right img{
+  margin-left: 130px;
+  margin-bottom: -50px;
+}
+
+.graphic-container{
+  gap: 20px;
+}
+
+.graphic-right img{
+  margin-left: 130px;
+  margin-bottom: -50px;
+}
+
+.programing-container{
+  gap: 20px;
+}
+
+.programing-right img{
+  margin-left: 130px;
+  margin-bottom: -50px;
+}
+
+.data-container{
+  gap: 20px;
+}
+
+.data-right img{
+  margin-left: 130px;
+  margin-bottom: -50px;
+}
+
+.w-container{
+  gap: 20px;
+}
+
+.w-right img{
+  margin-left: 130px;
+  margin-bottom: -50px;
+}
+
+.sk-container{
+  gap: 20px;
+}
+
+.sk-right img{
+  margin-left: 130px;
+  margin-bottom: -50px;
+}
+
+}
+
