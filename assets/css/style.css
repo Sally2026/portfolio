@@ -360,10 +360,64 @@ padding: 20px;
 
 .programing-right img{
   margin-left: 260px;
-  margin-bottom: -500px;
+  margin-bottom: -340px;
 }
 
+.programing-right a{
+  background: #e9de9e;
+  padding: 10px;
+  border-radius: 5px;
+  color: #000;
+}
 
+.programing-right a:hover{
+  text-decoration: underline;
+  color: #5A97AC;
+}
+
+#myform{
+  background: #FCF8E7;
+}
+
+.formcontainer {
+  width: 1000px;
+  padding: 5px;
+}
+
+.formlabel {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+  padding: 5px;
+}
+
+.error {
+  color: red;
+  padding-left: 5px;
+}
+
+.img-container {
+  float: left;
+  width: 40%;
+  padding: 20px;
+}
+
+#chart-container {
+  width: 500px;
+  height: 400px;
+}
+
+canvas{
+  width: 600px;
+  height: 400px;
+  margin-top: 20px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 /*---------------- Graphic Design pages ----------------*/
 
 .graphic-container{
@@ -380,6 +434,18 @@ padding: 20px;
   margin-bottom: -440px;
 }
 
+.graphic-right a{
+  background: #e9de9e;
+  padding: 10px;
+  border-radius: 5px;
+  color: #000;
+}
+
+.graphic-right a:hover{
+  text-decoration: underline;
+  color: #5A97AC;
+}
+
 /*---------------- Data pages ----------------*/
 
 .data-container{
@@ -393,7 +459,19 @@ padding: 20px;
 
 .data-right img{
   margin-left: 260px;
-  margin-bottom: -600px;
+  margin-bottom: -50px;
+}
+
+.data-right a{
+  background: #e9de9e;
+  padding: 10px;
+  border-radius: 5px;
+  color: #000;
+}
+
+.data-right a:hover{
+  text-decoration: underline;
+  color: #5A97AC;
 }
 
 /*---------------- Web pages ----------------*/
@@ -409,9 +487,20 @@ padding: 20px;
 
 .web-right img{
   margin-left: 260px;
-  margin-bottom: -340px;
+  margin-bottom: -50px;
 }
 
+.web-right a{
+  background: #e9de9e;
+  padding: 10px;
+  border-radius: 5px;
+  color: #000;
+}
+
+.web-right a:hover{
+  text-decoration: underline;
+  color: #5A97AC;
+}
 /*---------------- Written pages ----------------*/
 
 .w-container{
@@ -425,12 +514,24 @@ padding: 20px;
 
 .w-right img{
   margin-left: 260px;
-  margin-bottom: -340px;
+  margin-bottom: -320px;
+}
+
+.w-right a{
+  background: #e9de9e;
+  padding: 10px;
+  border-radius: 5px;
+  color: #000;
+}
+
+.w-right a:hover{
+  text-decoration: underline;
+  color: #5A97AC;
 }
 
 /*---------------- Soft Skills pages ----------------*/
 
-.w-container{
+.sk-container{
   display: grid;
   grid-template-columns:repeat(2,1fr);
   width: 80vw;
@@ -439,7 +540,19 @@ padding: 20px;
   background: #5A97AC;
 }
 
-.w-right img{
+.sk-right img{
   margin-left: 260px;
   margin-bottom: -340px;
+}
+
+.sk-right a{
+  background: #e9de9e;
+  padding: 10px;
+  border-radius: 5px;
+  color: #000;
+}
+
+.sk-right a:hover{
+  text-decoration: underline;
+  color: #5A97AC;
 }
