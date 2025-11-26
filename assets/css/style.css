@@ -609,14 +609,10 @@ canvas{
 /*---------------- Media Queries ----------------*/
 
 /* Smartphones ----------- */
-@media (max-width : 485px)  {
-
-  /* Hide menu by default */
+@media (max-width : 650px)  {
   .nav-lists {
     display: none;
   }
-
-  /* Show when active class added by JS */
   .nav-lists.active {
   display: flex !important;
   flex-direction: column;
@@ -651,22 +647,16 @@ canvas{
   grid-template-columns: 1fr;
 }
 
-.blog-post{
-  font-size: 1.3rem;
-}
 
 .first-name, .last-name{
   font-size: 3rem;
 }
 
 .description{
-  font-size: 1rem;
+  font-size: 4rem;
+  padding:20px;
 }
 
-.sidebar{
-  background: #5A97AC;
-  margin-left: 50px;
-}
 
 .profile img {
   display: block;
@@ -675,7 +665,7 @@ canvas{
 
 .portfolio-nav ul{
   margin-right: 0px;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .portfolio-gallery{
@@ -731,16 +721,48 @@ canvas{
 }
 
 /* iPads ----------- */
-@media (max-width : 768px) {
+@media (max-width : 976px) {
+
+  .nav-lists {
+    display: none;
+  }
+  .nav-lists.active {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: fixed;
+  top: 109px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 109px);
+  background: #5A97AC;
+  z-index: 9999;
+}
+
+
+  /* Hamburger must show */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #000;
+    z-index: 10000;
+  }
+
+
+.nav-links ul {
+  display: none !important;
+  gap: 10px;
+  font-size: 1.1rem;
+}
 
 .primary{
   padding-left: 20px;
   padding-right: 20px;
 }
-.nav-links ul{
-  gap: 10px;
-  font-size: 1.1rem;
-}
+
 
 .container{
   gap:5px;
@@ -835,7 +857,7 @@ canvas{
 
 }
  
-/* Desktops and laptops ----------- */
+/* Desktops and laptops ----------- 
 @media (max-width : 1224px) {
 
   .right-side img{
