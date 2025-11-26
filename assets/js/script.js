@@ -1,3 +1,4 @@
+// TypeWriting 
 document.addEventListener("DOMContentLoaded", () => {
   const roles = ["Web Designer", "Web Developer", "Graphic Designer"];
   let currentIndex = 0;
@@ -7,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function typeEffect() {
     const currentRole = roles[currentIndex];
-    
+
     if (isDeleting) {
       charIndex--;
     } else {
@@ -20,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
       setTimeout(() => {
         isDeleting = true;
         typeEffect();
-      }, 1000); // pause before deleting
+      }, 1000);
       return;
     } else if (isDeleting && charIndex === 0) {
       isDeleting = false;
@@ -30,150 +31,73 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(typeEffect, isDeleting ? 60 : 100);
   }
 
-  typeEffect(); // Start the typing effect
+  typeEffect();
 
-   // Get nav links and portfolio items
+  // Portfolio filter
   const navLinks = document.querySelectorAll('.portfolio-nav a');
   const items = document.querySelectorAll('.portfolio-item');
 
-navLinks.forEach(link => {
-  link.addEventListener('click', (e) => {
-    e.preventDefault();
+  navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
 
-    // active class
-    navLinks.forEach(nav => nav.classList.remove('active'));
-    link.classList.add('active');
+      navLinks.forEach(nav => nav.classList.remove('active'));
+      link.classList.add('active');
 
-    const category = link.dataset.category; // ← use data-category
+      const category = link.dataset.category;
 
-    items.forEach(item => {
-      if (category === 'all' || item.classList.contains(category)) {
-        item.style.display = 'block';
-      } else {
-        item.style.display = 'none';
-      }
+      items.forEach(item => {
+        if (category === 'all' || item.classList.contains(category)) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
     });
   });
 });
 
-});
-
-
-
-/*
-document.addEventListener("DOMContentLoaded", () => {
-  const skillsSection = document.querySelector(".skills");
-  const skillBars = [
-    { id: "skill-html", percentage: 90 },
-    { id: "skill-css", percentage: 80 },
-    { id: "skill-js", percentage: 55 }
-  ];
-
-  let hasAnimated = false;
-
-  function animateSkillBars() {
-    if (hasAnimated) return;
-    if (isElementInViewport(skillsSection)) {
-      skillBars.forEach((skill) => {
-        const elem = document.getElementById(skill.id);
-        let width = 0;
-        const interval = setInterval(() => {
-          if (width >= skill.percentage) {
-            clearInterval(interval);
-          } else {
-            width++;
-            elem.style.width = width + "%";
-          }
-        }, 10);
-      });
-      hasAnimated = true;
-    }
-  }
-
-  function isElementInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return (
-      rect.top <= window.innerHeight - 100 &&
-      rect.bottom >= 0
-    );
-  }
-
-  window.addEventListener("scroll", animateSkillBars);
-});*/
-
- 
+// Calculator AJAX
 function calculate() {
     "use strict";
 
-    // Get a reference to the form using jQuery
     let form = $("#myform");
 
-    // If all form elements are valid, get the form values
     if (form.valid()) {
-        
-        // From Value
+
         let FromValue = document.getElementById("FormValue").value;
 
-        // From Unit
         let FromUnit = "";
-        if (document.getElementById("cm").checked) {
-            FromUnit = document.getElementById("cm").value;
-        }
-        if (document.getElementById("m").checked) {
-            FromUnit = document.getElementById("m").value;
-        }
-        if (document.getElementById("km").checked) {
-            FromUnit = document.getElementById("km").value;
-        }
-        if (document.getElementById("in").checked) {
-            FromUnit = document.getElementById("in").value;
-        }
-        if (document.getElementById("ft").checked) {
-            FromUnit = document.getElementById("ft").value;
-        }
-        if (document.getElementById("yd").checked) {
-            FromUnit = document.getElementById("yd").value;
-        }
-        if (document.getElementById("mi").checked) {
-            FromUnit = document.getElementById("mi").value;
-        }
+        if (document.getElementById("cm").checked) FromUnit = document.getElementById("cm").value;
+        if (document.getElementById("m").checked) FromUnit = document.getElementById("m").value;
+        if (document.getElementById("km").checked) FromUnit = document.getElementById("km").value;
+        if (document.getElementById("in").checked) FromUnit = document.getElementById("in").value;
+        if (document.getElementById("ft").checked) FromUnit = document.getElementById("ft").value;
+        if (document.getElementById("yd").checked) FromUnit = document.getElementById("yd").value;
+        if (document.getElementById("mi").checked) FromUnit = document.getElementById("mi").value;
 
-        // To Unit
         let ToUnit = "";
-        if (document.getElementById("tocm").checked) {
-            ToUnit = document.getElementById("tocm").value;
-        }
-        if (document.getElementById("tom").checked) {
-            ToUnit = document.getElementById("tom").value;
-        }
-        if (document.getElementById("tokm").checked) {
-            ToUnit = document.getElementById("tokm").value;
-        }
-        if (document.getElementById("toin").checked) {
-            ToUnit = document.getElementById("toin").value;
-        }
-        if (document.getElementById("toft").checked) {
-            ToUnit = document.getElementById("toft").value;
-        }
-        if (document.getElementById("toyd").checked) {
-            ToUnit = document.getElementById("toyd").value;
-        }
-        if (document.getElementById("tomi").checked) {
-            ToUnit = document.getElementById("tomi").value;
-        }
+        if (document.getElementById("tocm").checked) ToUnit = document.getElementById("tocm").value;
+        if (document.getElementById("tom").checked) ToUnit = document.getElementById("tom").value;
+        if (document.getElementById("tokm").checked) ToUnit = document.getElementById("tokm").value;
+        if (document.getElementById("toin").checked) ToUnit = document.getElementById("toin").value;
+        if (document.getElementById("toft").checked) ToUnit = document.getElementById("toft").value;
+        if (document.getElementById("toyd").checked) ToUnit = document.getElementById("toyd").value;
+        if (document.getElementById("tomi").checked) ToUnit = document.getElementById("tomi").value;
 
         ConvertUnits(FromValue, FromUnit, ToUnit);
     }
 }
 
+// Currency AJAX
 async function ConvertUnits(FromValue, FromUnit, ToUnit) {
     "use strict";
 
-    // URL and method used with AJAX Call
     let myURL = "https://brucebauer.info/assets/ITEC3650/unitsconversion.php";
-    myURL = myURL + "?FromValue=" + encodeURIComponent(FromValue) + "&FromUnit=" + encodeURIComponent(FromUnit) + "&ToUnit=" + encodeURIComponent(ToUnit);
+    myURL += "?FromValue=" + encodeURIComponent(FromValue);
+    myURL += "&FromUnit=" + encodeURIComponent(FromUnit);
+    myURL += "&ToUnit=" + encodeURIComponent(ToUnit);
 
-    /* fetch the results */
     let response = await fetch(myURL);
     let result = await response.json();
 
@@ -183,10 +107,8 @@ async function ConvertUnits(FromValue, FromUnit, ToUnit) {
 function clearform() {
     "use strict";
 
-    // Set all of the form values to blank or false
     document.getElementById("FormValue").value = "";
 
-    // Uncheck all "From Unit" radio buttons
     document.getElementById("cm").checked = false;
     document.getElementById("m").checked = false;
     document.getElementById("km").checked = false;
@@ -195,7 +117,6 @@ function clearform() {
     document.getElementById("yd").checked = false;
     document.getElementById("mi").checked = false;
 
-    // Uncheck all "To Unit" radio buttons
     document.getElementById("tocm").checked = false;
     document.getElementById("tom").checked = false;
     document.getElementById("tokm").checked = false;
@@ -204,20 +125,17 @@ function clearform() {
     document.getElementById("toyd").checked = false;
     document.getElementById("tomi").checked = false;
 
-    // Clear the output value
     document.getElementById("ToValue").innerHTML = "";
 }
 
-// Initialize jQuery form validation
 $("#myform").validate({});
-
 
 $(document).ready(function () {
     $("#DisplayCurrency").click(GetCurrency);
     $("#Clear").click(ClearForm);
 });
 
-let myChart0; 
+let myChart0;
 
 async function GetCurrency() {
     "use strict";
@@ -242,7 +160,6 @@ async function GetCurrency() {
                 return;
             }
 
-            /* Prepare data for Chart.js */
             let labels = [];
             let dataPoints = [];
 
@@ -254,12 +171,10 @@ async function GetCurrency() {
 
             let ctx0 = document.getElementById("chartjs-0").getContext('2d');
 
-            // Destroy old chart instance if exists
             if (myChart0) {
                 myChart0.destroy();
             }
 
-            // Create new chart
             myChart0 = new Chart(ctx0, {
                 type: "line",
                 data: {
@@ -308,10 +223,58 @@ function ClearForm() {
     $("#ConvertCurrency").val("");
     $("#FromDate").val("");
     $("#ToDate").val("");
-    
 
     if (myChart0) {
         myChart0.destroy();
         myChart0 = null;
     }
 }
+
+// Hamburger Menu
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    const navList = document.querySelector('.nav-lists');
+
+    hamburger.addEventListener('click', () => {
+        navList.classList.toggle('active');
+        document.body.classList.toggle('menu-open');
+    });
+});
+
+// Back to Top Button
+document.addEventListener('DOMContentLoaded', () => {
+    jQuery(document).ready(function($) {
+        var progressPath = document.querySelector('.progress-wrap path');
+        var pathLength = progressPath.getTotalLength();
+
+        progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+        progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+        progressPath.style.strokeDashoffset = pathLength;
+        progressPath.getBoundingClientRect();
+        progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+
+        var updateProgress = function () {
+            var scroll = $(window).scrollTop();
+            var height = $(document).height() - $(window).height();
+            var progress = pathLength - (scroll * pathLength / height);
+            progressPath.style.strokeDashoffset = progress;
+        };
+
+        updateProgress();
+
+        $(window).scroll(function () {
+            updateProgress();
+            if ($(this).scrollTop() > 20) {
+                $('.progress-wrap').addClass('active-progress');
+            } else {
+                $('.progress-wrap').removeClass('active-progress');
+            }
+        });
+
+        $('.progress-wrap').on('click', function (event) {
+            event.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, 550);
+            return false;
+        });
+    });
+});

@@ -30,7 +30,6 @@ body hr{
   margin: 0px 70px;
 }
 
-
 .nav-links ul {
   display: flex;
   flex-direction: row;
@@ -63,6 +62,21 @@ body hr{
 .resume:hover {
   color: #000;
   transition: 0.3s ease-in-out;
+}
+
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 4px;
+  background: #000;
+  transition: 0.4s;
 }
 
 /*---------------- Content ----------------*/
@@ -556,13 +570,115 @@ canvas{
   color: #5A97AC;
 }
 
+
+/*  ---------------Back to Top-----------------  */
+
+.progress-wrap {
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	height: 46px;
+	width: 46px;
+	cursor: pointer;
+	display: block;
+	border-radius: 50px;
+	background-color: #FFB962;           
+	box-shadow: inset 0 0 0 2px rgba(255,255,255,0.2);
+	z-index: 10000;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(15px);
+	transition: all 200ms linear;
+}
+
+.progress-wrap.active-progress {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+
+.progress-wrap::after {
+	position: absolute;
+	content: '↑';               
+	text-align: center;
+	line-height: 46px;
+	font-size: 24px;
+	color: #ffffff;                 
+	left: 0;
+	top: 0;
+	height: 46px;
+	width: 46px;
+	cursor: pointer;
+	display: block;
+	z-index: 2;
+	transition: all 200ms linear;
+}
+
+.progress-wrap::before {
+	display: none;
+}
+
+.progress-wrap svg path { 
+	fill: none; 
+}
+
+.progress-wrap svg.progress-circle path {
+	stroke: #ffffff;
+	stroke-width: 4;
+	box-sizing: border-box;
+	transition: all 200ms linear;
+}
+
 /*---------------- Media Queries ----------------*/
 
 @media (max-width: 650px) {
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 200px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .web-container, 
+  .graphic-container,
+  .programing-container,
+  .data-container,
+  .w-container,
+  .sk-container{
+    grid-template-columns: 1fr;
+  }
+
+  .resume-container{
+    gap: 20px;
+  }
+
+  .right-side img{
+    display: none;
+  }
+
+  .coverletter-container img{
+    display: none;
+  }
+
 }
 
 
-@media (max-width: 976px) {
+@media (max-width: 990px) {
 
 .nav-links ul {
   gap: 10px;
@@ -578,7 +694,6 @@ canvas{
 
 .skills-container {
   margin: 0 auto;
-
 }
 
 .right-side img{
@@ -591,59 +706,23 @@ canvas{
   margin-bottom: -70px;
 }
 
-.web-container{
-  gap: 20px;
-}
-
-.web-right img{
-  margin-left: 130px;
-  margin-bottom: -50px;
-}
-
-.graphic-container{
-  gap: 20px;
-}
-
-.graphic-right img{
-  margin-left: 130px;
-  margin-bottom: -50px;
-}
-
-.programing-container{
-  gap: 20px;
-}
-
-.programing-right img{
-  margin-left: 130px;
-  margin-bottom: -50px;
-}
-
-.data-container{
-  gap: 20px;
-}
-
-.data-right img{
-  margin-left: 130px;
-  margin-bottom: -50px;
-}
-
-.w-container{
-  gap: 20px;
-}
-
-.w-right img{
-  margin-left: 130px;
-  margin-bottom: -50px;
-}
-
+.web-container,
+.graphic-container,
+.programing-container,
+.data-container,
+.w-container,
 .sk-container{
   gap: 20px;
 }
 
+.web-right img,
+.graphic-right img,
+.programing-right img,
+.data-right img,
+.w-right img,
 .sk-right img{
   margin-left: 130px;
   margin-bottom: -50px;
 }
-
 }
 
