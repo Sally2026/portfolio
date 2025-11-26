@@ -61,15 +61,16 @@ document.addEventListener("DOMContentLoaded", () => {
     // =======================================================
     // 3. HAMBURGER MENU
     // =======================================================
-    const hamburger = document.querySelector(".hamburger");
-    const navList = document.querySelector(".nav-lists");
 
-    if (hamburger && navList) {
-        hamburger.addEventListener("click", () => {
-            navList.classList.toggle("active");
-            document.body.classList.toggle("menu-open");
-        });
-    }
+    const hamburger = document.querySelector(".hamburger");
+    const navLists = document.querySelector(".nav-lists");
+
+    hamburger.addEventListener("click", () => {
+    navLists.classList.toggle("active");
+    });
+
+
+
 
 
     // =======================================================

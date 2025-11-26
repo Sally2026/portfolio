@@ -66,9 +66,8 @@ body hr{
 
 .hamburger {
   display: none;
-  flex-direction: column;
   cursor: pointer;
-  gap: 5px;
+  font-size: 2rem;
 }
 
 /*---------------- Content ----------------*/
@@ -610,33 +609,43 @@ canvas{
 
 /*---------------- Media Queries ----------------*/
 
-/* Phones - Small */
+/* MOBILE MENU */
 @media (max-width: 480px) {
-ul.nav-lists {
-  display: none;
-}
 
-.nav-lists.active {
-  display: flex;
+  /* Hide menu by default */
+  .nav-lists {
+    display: none;
+  }
+
+  /* Show when active class added by JS */
+  .nav-lists.active {
+  display: flex !important;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
   position: fixed;
   top: 109px;
   left: 0;
-  right: 0;
-  width: 100vw;
-  height: calc(100vh - 109px); /* Subtract header height */
-  padding: 0;
-  margin: 0;
+  width: 100%;
+  height: calc(100vh - 109px);
   background: #5A97AC;
   z-index: 9999;
-  gap: 20px;
-  overflow: hidden;
 }
 
-.hamburger {
-  display: flex;
+
+  /* Hamburger must show */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #000;
+    z-index: 10000;
+  }
+
+
+.nav-links ul {
+  display: none !important;
 }
 
 .container{
