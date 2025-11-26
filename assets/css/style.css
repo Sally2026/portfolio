@@ -244,7 +244,6 @@ padding: 20px;
   margin-bottom: 0;
 }
 
-
 .portfolio-nav ul{
   display: flex;
   flex-direction: row;
@@ -676,8 +675,8 @@ canvas{
 
 .portfolio-nav ul{
   margin-right: 0px;
-  font-size: 0.9rem;
-  gap: 10px;
+  font-size: 0.7rem;
+  gap: 5px;
 }
 
 .portfolio-gallery{
@@ -711,6 +710,36 @@ canvas{
 /* Phones - Large & Small Tablets */
 @media (max-width: 768px) {
 
+.primary{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.nav-links ul{
+  gap: 10px;
+  font-size: 1.1rem;
+}
+
+.container{
+  gap:5px;
+}
+
+.blog-post {
+  font-size: 1.3rem;
+}
+
+.first-name, .last-name {
+  font-size: 3rem;
+}
+
+.description{
+  font-size: 1rem;
+}
+
+.sidebar{
+  margin-left: 60px;
+  margin-top: 40px;
+  margin-bottom:40px;
+}
 
 .skills-container {
   margin: 0 auto;
@@ -718,12 +747,21 @@ canvas{
 
 .right-side img{
   margin-left: 60px;
-  margin-bottom: -460px;
+  margin-bottom: -400px;
 }
 
 .coverletter-container img{
-  margin-left: 420px;
-  margin-bottom: -70px;
+  width: 200px;
+  margin-left: 360px;
+  margin-bottom: -60px;
+}
+
+.portfolio-gallery{
+  column-count: 2;
+}
+
+.portfolio-nav ul{
+  gap: 5px;
 }
 
 .web-container,

@@ -32,6 +32,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (textElement) typeEffect();
 
+    // =======================================================
+    // 3. HAMBURGER MENU
+    // =======================================================
+
+    const hamburger = document.querySelector(".hamburger");
+    const navLists = document.querySelector(".nav-lists");
+
+    hamburger.addEventListener("click", () => {
+    navLists.classList.toggle("active");
+    });
+
 
     // =======================================================
     // 2. PORTFOLIO FILTER
@@ -56,22 +67,6 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     });
-
-
-    // =======================================================
-    // 3. HAMBURGER MENU
-    // =======================================================
-
-    const hamburger = document.querySelector(".hamburger");
-    const navLists = document.querySelector(".nav-lists");
-
-    hamburger.addEventListener("click", () => {
-    navLists.classList.toggle("active");
-    });
-
-
-
-
 
     // =======================================================
     // 4. BACK TO TOP BUTTON (with circular progress)
