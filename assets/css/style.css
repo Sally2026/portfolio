@@ -608,8 +608,8 @@ canvas{
 
 /*---------------- Media Queries ----------------*/
 
-/* MOBILE MENU */
-@media (max-width: 480px) {
+/* Smartphones ----------- */
+@media (max-width : 485px)  {
 
   /* Hide menu by default */
   .nav-lists {
@@ -675,12 +675,12 @@ canvas{
 
 .portfolio-nav ul{
   margin-right: 0px;
-  font-size: 0.7rem;
-  gap: 5px;
+  font-size: 0.8rem;
 }
 
 .portfolio-gallery{
-  column-count: 1;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .web-container, 
@@ -705,10 +705,33 @@ canvas{
   display: none;
 }
 
+.web-right img{
+  display: none;
 }
 
-/* Phones - Large & Small Tablets */
-@media (max-width: 768px) {
+.graphic-right img{
+  display: none;
+}
+
+.programing-right img{
+  display: none;
+}
+
+.data-right img{
+  display: none;
+}
+
+.w-right img{
+  display: none;
+}
+
+.sk-right img{
+  display: none;
+}
+}
+
+/* iPads ----------- */
+@media (max-width : 768px) {
 
 .primary{
   padding-left: 20px;
@@ -746,6 +769,7 @@ canvas{
 }
 
 .right-side img{
+  width: 200px;
   margin-left: 60px;
   margin-bottom: -400px;
 }
@@ -761,22 +785,8 @@ canvas{
 }
 
 .portfolio-nav ul{
-  gap: 5px;
+  gap: 8px;
 }
-
-.web-container,
-.graphic-container,
-.programing-container,
-.data-container,
-.w-container,
-.sk-container{
-  gap: 20px;
-}
-
-}
-
-/* Tablets & Small Laptops */
-@media (max-width: 1024px) {
 
 .web-container,
 .graphic-container,
@@ -788,7 +798,76 @@ canvas{
 }
 
 .web-right img{
-  margin-left: 140px;
-  margin-bottom: -50px;
+  width: 200px;
+  margin-left: 100px;
+  margin-bottom: -40px;
 }
+
+.graphic-right img{
+  width: 200px;
+  margin-left: 100px;
+  margin-bottom: -40px;
+}
+
+.programing-right img{
+  width: 200px;
+  margin-left: 100px;
+  margin-bottom: -40px;
+}
+
+.data-right img{
+  width: 200px;
+  margin-left: 100px;
+  margin-bottom: -40px;
+}
+
+.w-right img{
+  width: 200px;
+  margin-left: 100px;
+  margin-bottom: -40px;
+}
+
+.sk-right img{
+  width: 200px;
+  margin-left: 100px;
+  margin-bottom: -40px;
+}
+
+}
+ 
+/* Desktops and laptops ----------- */
+@media (max-width : 1224px) {
+
+  .right-side img{
+    margin-left: 150px;
+  }
+
+  .coverletter-container img{
+    margin-left: 600px;
+  }
+  
+  .web-right img{
+    margin-left: 240px;
+  }
+
+  .graphic-right img{
+  margin-left: 240px;
+}
+
+.programing-right img{
+  margin-left: 240px;
+}
+
+.data-right img{
+  margin-left: 240px;
+}
+
+.w-right img{
+  margin-left: 240px;
+}
+
+.sk-right img{
+  margin-left: 240px;
+}
+
 }
