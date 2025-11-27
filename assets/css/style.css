@@ -654,7 +654,6 @@ canvas{
 
 .description{
   font-size: 4rem;
-  padding:20px;
 }
 
 
@@ -665,7 +664,7 @@ canvas{
 
 .portfolio-nav ul{
   margin-right: 0px;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .portfolio-gallery{
@@ -722,10 +721,10 @@ canvas{
 
 /* iPads ----------- */
 @media (max-width : 976px) {
-
   .nav-lists {
     display: none;
   }
+
   .nav-lists.active {
   display: flex !important;
   flex-direction: column;
@@ -762,7 +761,6 @@ canvas{
   padding-left: 20px;
   padding-right: 20px;
 }
-
 
 .container{
   gap:5px;
@@ -820,44 +818,57 @@ canvas{
 }
 
 .web-right img{
-  width: 200px;
-  margin-left: 100px;
+  width: 140px;
   margin-bottom: -40px;
 }
 
 .graphic-right img{
-  width: 200px;
-  margin-left: 100px;
+ width: 140px;
   margin-bottom: -40px;
 }
 
 .programing-right img{
-  width: 200px;
-  margin-left: 100px;
+  width: 140px;
   margin-bottom: -40px;
 }
 
 .data-right img{
-  width: 200px;
-  margin-left: 100px;
+  width: 140px;
   margin-bottom: -40px;
 }
 
 .w-right img{
-  width: 200px;
-  margin-left: 100px;
+  width: 140px;
   margin-bottom: -40px;
 }
 
 .sk-right img{
-  width: 200px;
-  margin-left: 100px;
+  width: 140px;
   margin-bottom: -40px;
 }
 
 }
+
+@media (max-width : 1223px){
+  .primary{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.web-container,
+.graphic-container,
+.programing-container,
+.data-container,
+.w-container,
+.sk-container{
+  gap: 20px;
+}
+
+  
+  
+}
  
-/* Desktops and laptops ----------- 
+/* Desktops and laptops ----------- */
 @media (max-width : 1224px) {
 
   .right-side img{
@@ -868,21 +879,18 @@ canvas{
     margin-left: 600px;
   }
   
-  .web-right img{
+
+  .graphic-right img{
     margin-left: 240px;
   }
 
-  .graphic-right img{
-  margin-left: 240px;
-}
+  .programing-right img{
+    margin-left: 240px;
+  } 
 
-.programing-right img{
-  margin-left: 240px;
-}
-
-.data-right img{
-  margin-left: 240px;
-}
+  .data-right img{
+    margin-left: 240px;
+  }
 
 .w-right img{
   margin-left: 240px;
