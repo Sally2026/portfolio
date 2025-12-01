@@ -51,7 +51,7 @@ body hr{
   color: #5A97AC;
 }
 
-.resume {
+.contact {
   text-decoration: none;
   color: #000;
   background: #e9de9e;
@@ -59,7 +59,7 @@ body hr{
   padding: 8px 10px;
 }
 
-.resume:hover {
+.contact:hover {
   color: #000;
   transition: 0.3s ease-in-out;
 }
@@ -170,7 +170,7 @@ body hr{
 }
 
 .related-links a:hover {
-  color: #5A97AC;
+  color: #e9de9e;
 }
 
 hr {
@@ -605,42 +605,138 @@ canvas{
 	box-sizing: border-box;
 	transition: all 200ms linear;
 }
+/*---------------- Contact Form ----------------*/
+
+.form p{
+  color: #000;
+  font-family: "Caprasimo", serif;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.contact-form {
+  max-width: 600px;       
+  margin: 0 auto;          
+  padding: 20px;
+  font-family: "DM Serif Text", serif;
+  background: #5A97AC;
+  border-radius: 6px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  text-align: left;        
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.contact-form textarea {
+  height: 140px;
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  background: #111;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #e9de9e;
+}
+
+/*---------------- Footer ----------------*/
+.footer {
+  background: #5A97AC;
+  padding: 30px 0;
+  margin-top: 40px;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 5px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-links li a {
+  font-size: 2.2rem;
+  color: #e9de9e;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.footer-links li a:hover {
+  color: #000;
+}
+
+.footer h6 {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #000;
+}
+
 
 /*---------------- Media Queries ----------------*/
 
 /* Smartphones ----------- */
 @media (max-width : 650px)  {
-  .nav-lists {
-    display: none;
-  }
-  .nav-lists.active {
-  display: flex !important;
+
+.nav-lists {
+  display: none;
+}
+
+.nav-lists.active {
+  display: flex ;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  position: fixed;
-  top: 109px;
+  top: 60px;
   left: 0;
   width: 100%;
-  height: calc(100vh - 109px);
   background: #5A97AC;
   z-index: 9999;
 }
 
-
-  /* Hamburger must show */
-  .hamburger {
-    display: block;
-    cursor: pointer;
-    font-size: 2rem;
-    color: #000;
-    z-index: 10000;
-  }
+.hamburger {
+  display: block;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #000;
+  z-index: 10000;
+}
 
 
 .nav-links ul {
-  display: none !important;
+  display: none;
 }
 
 .container{
@@ -717,22 +813,25 @@ canvas{
 .sk-right img{
   display: none;
 }
+
 }
 
 /* iPads ----------- */
-@media (max-width : 976px) {
-  .nav-lists {
-    display: none;
-  }
 
-  .nav-lists.active {
-  display: flex !important;
+@media (max-width : 976px) {
+
+.nav-lists {
+  display: none;
+}
+
+.nav-lists.active {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
   position: fixed;
-  top: 109px;
+  top: 60px;
   left: 0;
   width: 100%;
   height: calc(100vh - 109px);
@@ -741,18 +840,16 @@ canvas{
 }
 
 
-  /* Hamburger must show */
-  .hamburger {
-    display: block;
-    cursor: pointer;
-    font-size: 2rem;
-    color: #000;
-    z-index: 10000;
-  }
+.hamburger {
+  display: block;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #000;
+  z-index: 10000;
+}
 
 
 .nav-links ul {
-  display: none !important;
   gap: 10px;
   font-size: 1.1rem;
 }
@@ -788,7 +885,7 @@ canvas{
   margin: 0 auto;
 }
 
-.right-side img{
+/*.right-side img{
   width: 200px;
   margin-left: 60px;
   margin-bottom: -400px;
@@ -845,6 +942,38 @@ canvas{
 .sk-right img{
   width: 140px;
   margin-bottom: -40px;
+}*/
+
+.right-side img{
+  display: none;
+}
+
+.coverletter-container img{
+  display: none;
+}
+
+.web-right img{
+  display: none;
+}
+
+.graphic-right img{
+  display: none;
+}
+
+.programing-right img{
+  display: none;
+}
+
+.data-right img{
+  display: none;
+}
+
+.w-right img{
+  display: none;
+}
+
+.sk-right img{
+  display: none;
 }
 
 }
@@ -863,34 +992,32 @@ canvas{
 .sk-container{
   gap: 20px;
 }
-
-  
   
 }
  
 /* Desktops and laptops ----------- */
 @media (max-width : 1224px) {
 
-  .right-side img{
-    margin-left: 150px;
-  }
+.right-side img{
+  margin-left: 150px;
+}
 
-  .coverletter-container img{
-    margin-left: 600px;
-  }
+.coverletter-container img{
+  margin-left: 600px;
+}
   
 
-  .graphic-right img{
-    margin-left: 240px;
-  }
+.graphic-right img{
+  margin-left: 240px;
+}
 
-  .programing-right img{
-    margin-left: 240px;
-  } 
+.programing-right img{
+  margin-left: 240px;
+} 
 
-  .data-right img{
-    margin-left: 240px;
-  }
+.data-right img{
+  margin-left: 240px;
+}
 
 .w-right img{
   margin-left: 240px;

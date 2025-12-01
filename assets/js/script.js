@@ -231,16 +231,26 @@ function ClearForm() {
 }
 
 // Hamburger Menu
-
 document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.querySelector('.hamburger');
     const navList = document.querySelector('.nav-lists');
-    
+    const navItems = document.querySelectorAll('.nav-lists li a'); // all nav links
+
+    // Toggle menu on hamburger click
     hamburger.addEventListener('click', () => {
-    navList.classList.toggle('active');
-    document.body.classList.toggle('menu-open');
+        navList.classList.toggle('active');
+        document.body.classList.toggle('menu-open');
+    });
+
+    // Close menu when a nav item is clicked
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            navList.classList.remove('active');
+            document.body.classList.remove('menu-open');
+        });
+    });
 });
-});
+
 
 // Back to Top Button
 document.addEventListener('DOMContentLoaded', () => {

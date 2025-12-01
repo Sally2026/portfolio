@@ -15,7 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js"></script>
     <script src="assets/js/script.js"></script>
-    <title>Sally Alazab Portfolio</title>
+    <title>Sally Alazab | Portfolio</title>
   </head>
 <body>
   <main>
@@ -23,6 +23,7 @@
       <figure>
         <a href="index.html">
         <img src="assets/img/logo4.png" alt="logo" width="50px">
+        </a>
       </figure>
       <nav class="nav-links">
         <div class="hamburger">
@@ -34,7 +35,7 @@
           <li><a href="coverletter.html">Cover Letter</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#portfolio">Projects</a></li>
-          <li><a href="assets/my-resume4.pdf" class="resume" target="_blank">Resume <i class="fa-solid fa-file-pdf"></i></a></li>
+          <li><a href="#contact" class="contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -48,7 +49,9 @@
         <ul class="related-links">
           <li><a href="https://www.linkedin.com/in/sally-alazab/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
           <li><a href="https://github.com/Sally2026" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-          <li><a href="https://www.instagram.com/s__1y2026?igsh=aHZvcmJoa3R4Ynhi&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="assets/my-resume4.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i></a></li>
+          <li><a href="#contact"><i class="fa-solid fa-envelopes-bulk"></i></a></li>
+          <!--<li><a href="https://www.instagram.com/s__1y2026?igsh=aHZvcmJoa3R4Ynhi&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>-->
         </ul>
         </div>
         <p class="description"> My work combines creativity and functionality. I love designing solutions that not only look great but also solve real problems. I enjoy blending creativity with problem-solving, whether that’s building user-friendly websites or developing cohesive visual designs. I’m excited to connect with opportunities where I can bring fresh ideas to life and continue growing as a designer.</p>
@@ -171,6 +174,37 @@
 		      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
 	      </svg>
       </div>
+      <div class="form" id="contact">
+        <p>Have a project in mind or a question about my work? <br>
+          Send me a message, I’d love to connect.<p>
+        <form action="https://formspree.io/f/xpwvrqkz" method="POST" class="contact-form">
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" placeholder="Project inquiry, question…" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" placeholder="Tell me how I can help…" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <footer class="footer">
+        <div class="footer-content">
+        <ul class="footer-links">
+          <li><a href="https://www.linkedin.com/in/sally-alazab/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/Sally2026" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="assets/my-resume4.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i></a></li>
+          <li><a href="#contact"><i class="fa-solid fa-envelopes-bulk"></i></a></li>
+        </ul>
+        <h6>&copy;2025 Sally Alazab</h6>
+        </div>
+      </footer>
   </main>
 </body>
 </html>
