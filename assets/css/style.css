@@ -703,7 +703,6 @@ canvas{
   color: #000;
 }
 
-
 /*---------------- Media Queries ----------------*/
 
 /* Smartphones ----------- */
@@ -719,6 +718,7 @@ canvas{
   justify-content: center;
   align-items: center;
   gap: 20px;
+  position: fixed;
   top: 60px;
   left: 0;
   width: 100%;
@@ -737,6 +737,11 @@ canvas{
 
 .nav-links ul {
   display: none;
+}
+
+.primary nav ul li a:hover {
+  text-decoration: underline;
+  color: #000;
 }
 
 .container{
@@ -761,6 +766,7 @@ canvas{
 .portfolio-nav ul{
   margin-right: 0px;
   font-size: 0.8rem;
+  gap:1px;
 }
 
 .portfolio-gallery{
@@ -850,8 +856,14 @@ canvas{
 
 
 .nav-links ul {
+  display: none;
   gap: 10px;
   font-size: 1.1rem;
+}
+
+.primary nav ul li a:hover {
+  text-decoration: underline;
+  color: #000;
 }
 
 .primary{
@@ -885,15 +897,14 @@ canvas{
   margin: 0 auto;
 }
 
-/*.right-side img{
-  width: 200px;
+.right-side img{
+  width: 180px;
   margin-left: 60px;
-  margin-bottom: -400px;
+  margin-bottom: -450px;
 }
 
 .coverletter-container img{
-  width: 200px;
-  margin-left: 360px;
+  width: 180px;
   margin-bottom: -60px;
 }
 
@@ -942,38 +953,6 @@ canvas{
 .sk-right img{
   width: 140px;
   margin-bottom: -40px;
-}*/
-
-.right-side img{
-  display: none;
-}
-
-.coverletter-container img{
-  display: none;
-}
-
-.web-right img{
-  display: none;
-}
-
-.graphic-right img{
-  display: none;
-}
-
-.programing-right img{
-  display: none;
-}
-
-.data-right img{
-  display: none;
-}
-
-.w-right img{
-  display: none;
-}
-
-.sk-right img{
-  display: none;
 }
 
 }
