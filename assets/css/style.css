@@ -703,6 +703,90 @@ canvas{
   color: #000;
 }
 
+/* ---------------- Fade In Up Animation ---------------- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------------- Logo ---------------- */
+.primary img {
+  opacity: 0;
+  animation: fadeInUp 1.5s ease-out forwards; 
+  animation-delay: 0.5s; 
+}
+
+/* ---------------- Nav Links ---------------- */
+.nav-links ul li {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+.nav-links ul li:nth-child(1) { animation-delay: 2s; }
+.nav-links ul li:nth-child(2) { animation-delay: 2.3s; }
+.nav-links ul li:nth-child(3) { animation-delay: 2.6s; }
+.nav-links ul li:nth-child(4) { animation-delay: 2.9s; }
+.nav-links ul li:nth-child(5) { animation-delay: 3.2s; }
+.nav-links ul li:nth-child(6) { animation-delay: 3.5s; }
+
+/* ---------------- Profile Image ---------------- */
+.profile img {
+  opacity: 0;
+  animation: fadeInUp 1.9s ease-out forwards;
+  animation-delay: 4.5s; /* after nav */
+}
+
+/* ---------------- Name and Intro ---------------- */
+.intro {
+  opacity: 0;
+  animation: fadeInUp 1.2s ease-out forwards;
+  animation-delay: 5.5s;
+}
+
+.first-name{
+  opacity: 0;
+  animation: fadeInUp 1.2s ease-out forwards;
+  animation-delay: 6s;
+}
+
+.last-name {
+  opacity: 0;
+  animation: fadeInUp 1.2s ease-out forwards;
+  animation-delay: 6.5s;
+}
+
+.typewriter, #text, .cursor {
+  opacity: 0;
+  animation: fadeInUp 1.2s ease-out forwards;
+  animation-delay: 7s; /* start after your name */
+}
+
+.description {
+  opacity: 0;
+  animation: fadeInUp 1.5s ease-out forwards;
+  animation-delay: 8.8s;
+}
+
+/* ---------------- Related Links ---------------- */
+.related-links li {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+.related-links li:nth-child(1) { animation-delay: 7.2s; }
+.related-links li:nth-child(2) { animation-delay: 7.4s; }
+.related-links li:nth-child(3) { animation-delay: 7.6s; }
+.related-links li:nth-child(4) { animation-delay: 7.8s; }
+
+
 /*---------------- Media Queries ----------------*/
 
 /* Smartphones ----------- */
