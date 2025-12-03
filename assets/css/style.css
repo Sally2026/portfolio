@@ -198,6 +198,11 @@ padding: 20px;
   text-align: center;
 }
 
+#skills hr{
+  height: 1px;
+  margin: 20px 400px;
+}
+
 .skills-container {
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -216,6 +221,91 @@ padding: 20px;
   color: #000;
   font-family: "Crimson Text", serif;
   font-size: 1.2rem;
+}
+
+/*---------------- Resume ----------------*/
+
+#resume-container{
+  margin: 0;
+  padding: 0;
+}
+
+#resume-container h2{
+  color: #000;
+  font-family: "Caprasimo", serif;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#resume-container h4{
+  color: #000;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 12px;
+}
+
+#resume-container hr{
+  height: 1px;
+  margin: 20px 400px;
+}
+
+.resume-nav{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resume-nav li {
+  background: #e9de9e;
+  border-radius: 13px;
+  transition: border-radius 0.3s ease, background 0.3s ease;
+  padding: 8px 10px;
+  list-style: none;
+}
+
+.resume-nav li:hover {
+  background: #5A97AC;
+  border-radius: 20px;
+}
+
+.resume-nav a {
+  color: #000;
+  font-size: 1.3rem;
+  text-decoration: none;
+  display: block; 
+}
+
+.resume-container h3{
+  color: #000;
+  font-family: "Caprasimo", serif;
+}
+
+.resume{
+  display: grid;
+  grid-template-columns:repeat(2,1fr);
+  width: 80vw;
+  margin: 40px auto;
+  padding: 20px;
+  background: #5A97AC;
+  gap: 100px;
+  border-radius: 20px;
+}
+
+.right-side a{
+  color: #000;
+}
+
+.right-side a:hover{
+  color: #e9de9e;
+}
+
+.right-side img{
+  margin-left: 220px;
+  margin-bottom: -50px;
 }
 
 /*---------------- Portfolio ----------------*/
@@ -308,34 +398,103 @@ padding: 20px;
   object-fit: cover;
 }
 
-/*---------------- Resume ----------------*/
-.resume-container{
+
+/*---------------- Cover Letter + Contact Form ----------------*/
+
+#letter-contact-section h2, .section-intro{
+  text-align: center;
+  color: #000;
+  font-family: "Caprasimo", serif;
+}
+
+#letter-contact-section hr{
+  height: 1px;
+  margin: 20px 400px;
+}
+
+.section-intro{
+  font-family: "DM Serif Text", serif;
+}
+
+.letter-contact {
   display: grid;
-  grid-template-columns:repeat(2,1fr);
+  grid-template-columns: 1fr 1fr;   
+  gap: 40px;
   width: 80vw;
-  margin: 80px auto;
-  padding: 20px;
+  margin: 50px auto;
+}
+
+.letter {
   background: #5A97AC;
+  padding: 30px;
+  border-radius: 20px;
 }
 
-.right-side img{
-  margin-left: 170px;
-  margin-bottom: -470px;
+.letter figure {
+  display: flex;
+  justify-content: flex-end;
 }
 
-/*---------------- Cover Letter----------------*/
-.coverletter-container{
-  display: grid;
-  grid-template-columns:repeat(1,1fr);
-  width: 80vw;
-  margin: 80px auto;
-  padding: 20px;
+.form {
   background: #5A97AC;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.coverletter-container img{
-  margin-left: 660px;
-  margin-bottom: -60px;
+.form p{
+  color: #000;
+  font-family: "Caprasimo", serif;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.contact-form {
+  max-width: 600px;       
+  margin: 0 auto;          
+  font-family: "DM Serif Text", serif;
+  background: #5A97AC;
+  border-radius: 6px;
+}
+
+.contact-form label {
+  text-align: left;        
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.contact-form textarea {
+  height: 140px;
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  background: #111;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #e9de9e;
 }
 
 /*---------------- Programing pages ----------------*/
@@ -347,6 +506,7 @@ padding: 20px;
   margin: 80px auto;
   padding: 20px;
   background: #5A97AC;
+  border-radius: 20px;
 }
 
 .programing-right img{
@@ -418,6 +578,7 @@ canvas{
   margin: 80px auto;
   padding: 20px;
   background: #5A97AC;
+  border-radius: 20px;
 }
 
 .graphic-right img{
@@ -446,6 +607,7 @@ canvas{
   margin: 80px auto;
   padding: 20px;
   background: #5A97AC;
+  border-radius: 20px;
 }
 
 .data-right img{
@@ -474,6 +636,7 @@ canvas{
   margin: 80px auto;
   padding: 20px;
   background: #5A97AC;
+  border-radius: 20px;
 }
 
 .web-right img{
@@ -501,6 +664,7 @@ canvas{
   margin: 80px auto;
   padding: 20px;
   background: #5A97AC;
+  border-radius: 20px;
 }
 
 .w-right img{
@@ -529,6 +693,7 @@ canvas{
   margin: 80px auto;
   padding: 20px;
   background: #5A97AC;
+  border-radius: 20px;
 }
 
 .sk-right img{
@@ -606,96 +771,33 @@ canvas{
 	box-sizing: border-box;
 	transition: all 200ms linear;
 }
-/*---------------- Contact Form ----------------*/
-
-.form p{
-  color: #000;
-  font-family: "Caprasimo", serif;
-  text-align: center;
-  font-size: 1.4rem;
-}
-
-.contact-form {
-  max-width: 600px;       
-  margin: 0 auto;          
-  padding: 20px;
-  font-family: "DM Serif Text", serif;
-  background: #5A97AC;
-  border-radius: 6px;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-form label {
-  text-align: left;        
-  font-weight: 500;
-  font-size: 1.2rem;
-  margin-bottom: 5px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
-  margin-bottom: 10px;
-}
-
-.contact-form textarea {
-  height: 140px;
-  resize: vertical;
-}
-
-.contact-form button {
-  padding: 12px;
-  margin-top: 10px;
-  border: none;
-  background: #111;
-  color: #fff;
-  font-size: 1rem;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.contact-form button:hover {
-  background: #e9de9e;
-}
 
 /*---------------- Footer ----------------*/
 .footer {
-  background: #5A97AC;
-  padding: 30px 0;
-  margin-top: 40px;
-}
-
-.footer-content {
-  text-align: center;
-}
-
-.footer-links {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 5px 0;
   display: flex;
-  justify-content: center;
-  gap: 15px;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 80px;
+  padding-right: 80px;
+  gap: 20px;
 }
 
-.footer-links li a {
-  font-size: 2.2rem;
-  color: #e9de9e;
-  text-decoration: none;
-  transition: 0.3s ease;
+
+.footer-nav-links ul{
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+  gap: 20px;
+  list-style-type: none;
 }
 
-.footer-links li a:hover {
+.footer-nav-links li a {
   color: #000;
+  text-decoration: none;
+}
+
+.footer-nav-links li a:hover {
+  color: #5A97AC;
 }
 
 .footer h6 {
@@ -707,7 +809,7 @@ canvas{
 
 /*---------------- Media Queries ----------------*/
 
-/* Smartphones ----------- */
+/* phones ----------- */
 @media (max-width : 650px)  {
 
 .nav-lists {
@@ -786,16 +888,13 @@ canvas{
   grid-template-columns: 1fr;
 }
 
-.resume-container{
-  gap: 20px;
+
+.resume{
+  grid-template-columns: 1fr;
 }
 
-.right-side img{
-  display: none;
-}
-
-.coverletter-container img{
-  display: none;
+.letter-contact {
+  grid-template-columns: 1fr;  
 }
 
 .web-right img{
@@ -900,14 +999,7 @@ canvas{
 }
 
 .right-side img{
-  width: 180px;
-  margin-left: 60px;
-  margin-bottom: -450px;
-}
-
-.coverletter-container img{
-  width: 180px;
-  margin-bottom: -60px;
+  display: none;
 }
 
 .portfolio-gallery{
@@ -928,39 +1020,33 @@ canvas{
 }
 
 .web-right img{
-  width: 140px;
-  margin-bottom: -40px;
+  display: none;
 }
 
 .graphic-right img{
- width: 140px;
-  margin-bottom: -40px;
+ display: none;
 }
 
 .programing-right img{
-  width: 140px;
-  margin-bottom: -40px;
+  display: none;
 }
 
 .data-right img{
-  width: 140px;
-  margin-bottom: -40px;
+  display: none;
 }
 
 .w-right img{
-  width: 140px;
-  margin-bottom: -40px;
+ display: none;
 }
 
 .sk-right img{
-  width: 140px;
-  margin-bottom: -40px;
+  display: none;
 }
 
 }
 
 @media (max-width : 1223px){
-  .primary{
+.primary{
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -976,36 +1062,3 @@ canvas{
   
 }
  
-/* Desktops and laptops ----------- */
-@media (max-width : 1224px) {
-
-.right-side img{
-  margin-left: 150px;
-}
-
-.coverletter-container img{
-  margin-left: 600px;
-}
-  
-
-.graphic-right img{
-  margin-left: 240px;
-}
-
-.programing-right img{
-  margin-left: 240px;
-} 
-
-.data-right img{
-  margin-left: 240px;
-}
-
-.w-right img{
-  margin-left: 240px;
-}
-
-.sk-right img{
-  margin-left: 240px;
-}
-
-}
