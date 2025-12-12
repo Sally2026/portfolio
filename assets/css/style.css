@@ -921,6 +921,24 @@ canvas{
   display: none;
 }
 
+
+.footer {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; 
+  gap: 15px;
+}
+
+.footer img {
+  width: 50px;
+}
+
+.footer-nav-links ul {
+  flex-direction: row;
+  gap: 15px;
+  font-size: 1.8rem;
+}
 }
 
 /* iPads ----------- */
